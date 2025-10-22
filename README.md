@@ -4,7 +4,7 @@ Welcome to the official repository for the Tastely landing page. This project is
 
 # 🚀 Live Demo
 
-(https://www.behance.net/gallery/237044951/Recipe-Sharing-Website-Landing-Page)
+https://www.behance.net/gallery/237044951/Recipe-Sharing-Website-Landing-Page
 
 # 📖 About The Project
 
