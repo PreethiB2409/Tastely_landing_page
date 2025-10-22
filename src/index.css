@@ -1,0 +1,497 @@
+/* ===== RESET & BASE STYLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fef3e2;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #fef3e2;
+}
+
+/* ===== NAVIGATION ===== */
+.navigation {
+  background-color: #fef3e2;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-shadow: 0px 1px 5px #f0cf9e;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-logo-text {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #2A1B04;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #2A1B04;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.get-started {
+  color: #2A1B04;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.get-started:hover {
+  color: #c2410c;
+}
+
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: #AE3612;
+  padding: 2rem;
+}
+
+.hero-container {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5rem;
+  align-items: center;
+}
+
+.hero-content {
+  color: #fef3e2;
+  margin-top: 5%;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #fef3e2;
+}
+
+.hero-button {
+  background-color: #fef3e2;
+  color: #AE3612;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #dd4517;
+  color: #fef3e2;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.hero-image-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* ===== POPULAR RECIPES ===== */
+.popular-recipes {
+  padding: 3rem 1.75rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.popular-recipes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.popular-recipes-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2A1B04;
+}
+
+.popular-recipes-link {
+  color: #AE3612;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.popular-recipes-grid {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 52px;
+  align-items:normal;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== RECIPE CARD ===== */
+.recipe-card {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.recipe-card-image-wrapper {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.recipe-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover .recipe-card-image {
+  transform: scale(1.05);
+}
+
+.recipe-card-content {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  text-align: center;
+}
+
+.recipe-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2A1B04;
+  letter-spacing: 0.01em;
+}
+
+/* ===== INSPIRATION SECTION ===== */
+.inspiration {
+  background-color: #fef3e2;
+}
+
+.inspiration-container {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inspiration-image-wrapper {
+  width: 926px;
+  height: 525px;
+}
+
+.inspiration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inspiration-content {
+  background-color: #24561D;
+  color: #fef3e2;
+  width: 571px;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.inspiration-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.inspiration-description {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fef3e2;
+}
+
+
+/* ===== OUR STORY ===== */
+.our-story {
+  padding: 3rem 1.75rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fef3e2;
+}
+
+.our-story-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2A1B04;
+  margin-bottom: 1rem;
+}
+
+.our-story-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.our-story-button {
+  background-color: #AE3612;
+  margin: 0 auto;
+  color: #fef3e2;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  display: flex;
+}
+
+.our-story-button:hover {
+  background-color: #dd4517;
+}
+
+/* ===== TESTIMONIALS ===== */
+
+
+.testimonials-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2A1B04;
+  margin-bottom: 3rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: -0.5rem;
+}
+
+.testimonial-card {
+  background-color: #24561D;
+  color: #fef3e2;
+  border-radius: 12px;
+  padding: 3rem 1.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  font-weight: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-info {
+  flex: 1;
+}
+
+.testimonial-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.testimonial-location {
+  color: #fef3e2;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+.testimonial-rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.star-icon {
+  width: 16px;
+  height: 16px;
+  fill: #fbbf24;
+  color: #fbbf24;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-dots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.testimonial-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  transition: background-color 0.3s;
+  padding: 0;
+}
+
+.testimonial-dot-active {
+  background-color: white;
+}
+
+.testimonial-dot-inactive {
+  background-color: #37852d;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #AE3612;
+  color: #fef3e2;
+  padding: 3rem 1.75rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-brand {
+  flex: 1;
+}
+
+.footer-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  color: #fef3e2;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link {
+  color: #fef3e2;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #f0cf9e;
+}
+
+.footer-bottom {
+  border-top: 1px solid #dd4517;
+  padding-top: 1.5rem;
+}
+
+.footer-copyright {
+  color: #fef3e2;
+  font-size: 0.875rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .popular-recipes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inspiration-title {
+    font-size: 2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
